@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+body{
+    background-color: #F3F8FA;
+    font-style: normal;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Inter';
+    font-weight: 900;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+    margin: 100px auto;
+}
+
+#content{
+    padding-right: 30px;
+    color: #091012;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.menu{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    float: left;
+}
+
+.menu li a{
+    float: left;
+    display: inline;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #091012;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu a{
+    display: block;
+    padding: 9px;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    display: block;
+    padding: 9px;
+    background-color: #4092B5;
+    color: #EEF5F6;
+    transition: 0.5s;
+}
+
+a#Click{
+    cursor: pointer;
+}
+
+#name{
+    background-color: #05090A;  
+    margin-left: 20px;
+    color: #EEF5F6;
+}
+
+button{
+    border: none;
+    border-radius: 30px;
+    color: #EEF5F6;
+    background-color: #489CBF;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#content p{
+    font-weight: 500px;
+}
