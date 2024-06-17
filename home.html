@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Santos Ribeiro</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a id="name">Vinícius Santos Ribeiro</a></li>
+            <li><a id="Click" class="Center_Content" href="home.html" onclick="run_animation()">About Me</a></li>
+            <li><a id="Click" class="Center_Content" href="portifolio.html" onclick="run_animation()">Portfolio</a></li>
+            <li style="float:right"><a id="Click" href="contacts.html" onclick="run_animation()">Contacts</a></li>
+        </ul><br>
+    </nav>
+    <section class="home animate__animated animate__backInRight" id="home_tag">
+        <div id="content">
+            <h1 style="font-size: 40px; color: #489CBF;">About Me</h1>
+            <p>Welcome! I'm Vinícius Santos Ribeiro, <span  style="font-size: 30px; font-weight: 900;">Software Engineer</span> with 18 years old, 
+                degree in System Analysis and Development, based in Brazil.<br><br>
+                So, this is my professional website, where you can find some projects i've done, and ways to reach me out. 
+                If you like it, contact me.</p>
+            <button id="Click" href="portifolio.html"><a>See projects</a></button>
+        </div>
+        <img src="IMGs/me.png" alt="My profile picture">
+    </section>
+
+    <script>
+        function run_animation(){
+            let item = document.getElementById("home_tag");
+            item.classList.add("animate__backOutLeft");
+            setTimeout(() => {
+                item.classList.remove("animate__backOutLeft");
+            }, 300);
+        }
+    </script>
+</body>
+</html>
